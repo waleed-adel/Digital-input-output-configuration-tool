@@ -23,3 +23,9 @@
 	configurations.
 	- Save -> to save the changes you made to the file.
 	- Load -> to load a previous configurations.
+	
+  ### Output
+  - DIO configurator generated a ".h" file that contains macros defining
+    ports configuration.
+  - Note: Check the file "PORT_config.h"
+  	- Path: "Output_Examples/PORT_Config.h"
