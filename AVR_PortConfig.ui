@@ -1,0 +1,5084 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>784</width>
+    <height>498</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>18</y>
+     <width>91</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>NEW</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>18</y>
+     <width>91</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>LOAD</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="DIOgroupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>70</y>
+     <width>761</width>
+     <height>421</height>
+    </rect>
+   </property>
+   <property name="visible">
+    <bool>false</bool>
+   </property>
+   <property name="title">
+    <string>DIO_Configurator</string>
+   </property>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>350</y>
+      <width>101</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Generate</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>287</y>
+      <width>301</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-weight:600;&quot;&gt;  O/P-I.V=0  ==&amp;gt; Output PIN with Initial Value = 0&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-weight:600;&quot;&gt;  O/P-I.V=1  ==&amp;gt; Output PIN with Initial Value = 1&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-weight:600;&quot;&gt;  I/P-I.V=0   ==&amp;gt; Input PIN with Initial Value   = 0&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-weight:600;&quot;&gt;  I/P-I.V=0   ==&amp;gt; Input PIN with Initial Value   = 1&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>30</y>
+      <width>771</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::NoFocus</enum>
+    </property>
+    <property name="contextMenuPolicy">
+     <enum>Qt::PreventContextMenu</enum>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <property name="tabBarAutoHide">
+     <bool>false</bool>
+    </property>
+    <widget class="QWidget" name="PORTA_tab_2">
+     <attribute name="title">
+      <string>PORTA</string>
+     </attribute>
+     <widget class="QGroupBox" name="PORTA_groupBox_2">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>741</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>PORTA</string>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+      <widget class="QPushButton" name="All_Output_Init0_pushButton_18">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>160</y>
+         <width>111</width>
+         <height>18</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>All_O/P with I.V=0</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="All_Output_Init1_pushButton_18">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>160</y>
+         <width>111</width>
+         <height>18</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>All_O/P with I.V=1</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="All_Input_Init0_pushButton_18">
+       <property name="geometry">
+        <rect>
+         <x>380</x>
+         <y>160</y>
+         <width>111</width>
+         <height>18</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>All_I/P with I.V=0</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="All_Input_Init1_pushButton_18">
+       <property name="geometry">
+        <rect>
+         <x>510</x>
+         <y>160</y>
+         <width>111</width>
+         <height>18</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>All_I/P with I.V=1</string>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="PIN1_groupBox_18">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>20</y>
+         <width>91</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>PIN1</string>
+       </property>
+       <widget class="QRadioButton" name="Output_init1_PIN1_radioButton_18">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init0_PIN1_radioButton_18">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=0</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init1_PIN1_radioButton_18">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>90</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Output_init0_PIN1_radioButton_18">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=0</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="PIN0_groupBox_17">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>91</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>PIN0</string>
+       </property>
+       <widget class="QRadioButton" name="Output_init1_PIN0_radioButton_18">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init0_PIN0_radioButton_18">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=0</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init1_PIN0_radioButton_19">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>90</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Output_init0_PIN0_radioButton_18">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=0</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="PIN4_groupBox_17">
+       <property name="geometry">
+        <rect>
+         <x>370</x>
+         <y>20</y>
+         <width>91</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>PIN4</string>
+       </property>
+       <widget class="QRadioButton" name="Output_init1_PIN4_radioButton_17">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init0_PIN4_radioButton_17">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=0</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init1_PIN4_radioButton_17">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>90</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Output_init0_PIN4_radioButton_17">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=0</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="PIN2_groupBox_17">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>20</y>
+         <width>91</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>PIN2</string>
+       </property>
+       <widget class="QRadioButton" name="Output_init1_PIN2_radioButton_17">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init0_PIN2_radioButton_17">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=0</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init1_PIN2_radioButton_17">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>90</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Output_init0_PIN2_radioButton_17">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=0</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="PIN5_groupBox_17">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>20</y>
+         <width>91</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>PIN5</string>
+       </property>
+       <widget class="QRadioButton" name="Output_init1_PIN5_radioButton_17">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init0_PIN5_radioButton_17">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=0</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init1_PIN5_radioButton_17">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>90</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Output_init0_PIN5_radioButton_17">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=0</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="PIN7_groupBox_17">
+       <property name="geometry">
+        <rect>
+         <x>640</x>
+         <y>20</y>
+         <width>91</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>PIN7</string>
+       </property>
+       <widget class="QRadioButton" name="Output_init1_PIN7_radioButton_17">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init0_PIN7_radioButton_17">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=0</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init1_PIN7_radioButton_17">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>90</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Output_init0_PIN7_radioButton_17">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=0</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="PIN6_groupBox_17">
+       <property name="geometry">
+        <rect>
+         <x>550</x>
+         <y>20</y>
+         <width>91</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>PIN6</string>
+       </property>
+       <widget class="QRadioButton" name="Output_init1_PIN6_radioButton_17">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init0_PIN6_radioButton_17">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=0</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init1_PIN6_radioButton_17">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>90</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Output_init0_PIN6_radioButton_17">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=0</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="PIN3_groupBox_17">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>20</y>
+         <width>91</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>PIN3</string>
+       </property>
+       <widget class="QRadioButton" name="Output_init1_PIN3_radioButton_17">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init0_PIN3_radioButton_17">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=0</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init1_PIN3_radioButton_17">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>90</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Output_init0_PIN3_radioButton_17">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=0</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="PORTB_tab_2">
+     <attribute name="title">
+      <string>PORTB</string>
+     </attribute>
+     <widget class="QGroupBox" name="PORTB_groupBox_2">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>741</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>PORTB</string>
+      </property>
+      <widget class="QPushButton" name="All_Output_Init0_pushButton_19">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>160</y>
+         <width>111</width>
+         <height>18</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>All_O/P with I.V=0</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="All_Output_Init1_pushButton_19">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>160</y>
+         <width>111</width>
+         <height>18</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>All_O/P with I.V=1</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="All_Input_Init0_pushButton_19">
+       <property name="geometry">
+        <rect>
+         <x>380</x>
+         <y>160</y>
+         <width>111</width>
+         <height>18</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>All_I/P with I.V=0</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="All_Input_Init1_pushButton_19">
+       <property name="geometry">
+        <rect>
+         <x>510</x>
+         <y>160</y>
+         <width>111</width>
+         <height>18</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>All_I/P with I.V=1</string>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="PIN1_groupBox_19">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>20</y>
+         <width>91</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>PIN1</string>
+       </property>
+       <widget class="QRadioButton" name="Output_init1_PIN1_radioButton_19">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init0_PIN1_radioButton_19">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=0</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init1_PIN1_radioButton_19">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>90</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Output_init0_PIN1_radioButton_19">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=0</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="PIN0_groupBox_18">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>91</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>PIN0</string>
+       </property>
+       <widget class="QRadioButton" name="Output_init1_PIN0_radioButton_19">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init0_PIN0_radioButton_19">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=0</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init1_PIN0_radioButton_20">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>90</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Output_init0_PIN0_radioButton_19">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=0</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="PIN4_groupBox_18">
+       <property name="geometry">
+        <rect>
+         <x>370</x>
+         <y>20</y>
+         <width>91</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>PIN4</string>
+       </property>
+       <widget class="QRadioButton" name="Output_init1_PIN4_radioButton_18">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init0_PIN4_radioButton_18">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=0</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init1_PIN4_radioButton_18">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>90</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Output_init0_PIN4_radioButton_18">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=0</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="PIN2_groupBox_18">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>20</y>
+         <width>91</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>PIN2</string>
+       </property>
+       <widget class="QRadioButton" name="Output_init1_PIN2_radioButton_18">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init0_PIN2_radioButton_18">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=0</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init1_PIN2_radioButton_18">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>90</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Output_init0_PIN2_radioButton_18">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=0</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="PIN5_groupBox_18">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>20</y>
+         <width>91</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>PIN5</string>
+       </property>
+       <widget class="QRadioButton" name="Output_init1_PIN5_radioButton_18">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init0_PIN5_radioButton_18">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=0</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init1_PIN5_radioButton_18">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>90</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Output_init0_PIN5_radioButton_18">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=0</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="PIN7_groupBox_18">
+       <property name="geometry">
+        <rect>
+         <x>640</x>
+         <y>20</y>
+         <width>91</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>PIN7</string>
+       </property>
+       <widget class="QRadioButton" name="Output_init1_PIN7_radioButton_18">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init0_PIN7_radioButton_18">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=0</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init1_PIN7_radioButton_18">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>90</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Output_init0_PIN7_radioButton_18">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=0</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="PIN6_groupBox_18">
+       <property name="geometry">
+        <rect>
+         <x>550</x>
+         <y>20</y>
+         <width>91</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>PIN6</string>
+       </property>
+       <widget class="QRadioButton" name="Output_init1_PIN6_radioButton_18">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init0_PIN6_radioButton_18">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=0</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init1_PIN6_radioButton_18">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>90</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Output_init0_PIN6_radioButton_18">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=0</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="PIN3_groupBox_18">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>20</y>
+         <width>91</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>PIN3</string>
+       </property>
+       <widget class="QRadioButton" name="Output_init1_PIN3_radioButton_18">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init0_PIN3_radioButton_18">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=0</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init1_PIN3_radioButton_18">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>90</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Output_init0_PIN3_radioButton_18">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=0</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="PORTC_tab_2">
+     <attribute name="title">
+      <string>PORTC</string>
+     </attribute>
+     <widget class="QGroupBox" name="PORTC_groupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>741</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>PORTC</string>
+      </property>
+      <widget class="QPushButton" name="All_Output_Init0_pushButton_20">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>160</y>
+         <width>111</width>
+         <height>18</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>All_O/P with I.V=0</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="All_Output_Init1_pushButton_20">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>160</y>
+         <width>111</width>
+         <height>18</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>All_O/P with I.V=1</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="All_Input_Init0_pushButton_20">
+       <property name="geometry">
+        <rect>
+         <x>380</x>
+         <y>160</y>
+         <width>111</width>
+         <height>18</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>All_I/P with I.V=0</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="All_Input_Init1_pushButton_20">
+       <property name="geometry">
+        <rect>
+         <x>510</x>
+         <y>160</y>
+         <width>111</width>
+         <height>18</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>All_I/P with I.V=1</string>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="PIN1_groupBox_20">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>20</y>
+         <width>91</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>PIN1</string>
+       </property>
+       <widget class="QRadioButton" name="Output_init1_PIN1_radioButton_20">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init0_PIN1_radioButton_20">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=0</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init1_PIN1_radioButton_20">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>90</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Output_init0_PIN1_radioButton_20">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=0</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="PIN0_groupBox_19">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>91</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>PIN0</string>
+       </property>
+       <widget class="QRadioButton" name="Output_init1_PIN0_radioButton_20">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init0_PIN0_radioButton_20">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=0</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init1_PIN0_radioButton_21">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>90</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Output_init0_PIN0_radioButton_20">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>29</y>
+          <width>71</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=0</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="PIN4_groupBox_19">
+       <property name="geometry">
+        <rect>
+         <x>370</x>
+         <y>20</y>
+         <width>91</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>PIN4</string>
+       </property>
+       <widget class="QRadioButton" name="Output_init1_PIN4_radioButton_19">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init0_PIN4_radioButton_19">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=0</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init1_PIN4_radioButton_19">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>90</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Output_init0_PIN4_radioButton_19">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=0</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="PIN2_groupBox_19">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>20</y>
+         <width>91</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>PIN2</string>
+       </property>
+       <widget class="QRadioButton" name="Output_init1_PIN2_radioButton_19">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init0_PIN2_radioButton_19">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=0</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init1_PIN2_radioButton_19">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>90</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Output_init0_PIN2_radioButton_19">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=0</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="PIN5_groupBox_19">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>20</y>
+         <width>91</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>PIN5</string>
+       </property>
+       <widget class="QRadioButton" name="Output_init1_PIN5_radioButton_19">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init0_PIN5_radioButton_19">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=0</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init1_PIN5_radioButton_19">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>90</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Output_init0_PIN5_radioButton_19">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=0</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="PIN7_groupBox_19">
+       <property name="geometry">
+        <rect>
+         <x>640</x>
+         <y>20</y>
+         <width>91</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>PIN7</string>
+       </property>
+       <widget class="QRadioButton" name="Output_init1_PIN7_radioButton_19">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init0_PIN7_radioButton_19">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=0</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init1_PIN7_radioButton_19">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>90</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Output_init0_PIN7_radioButton_19">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=0</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="PIN6_groupBox_19">
+       <property name="geometry">
+        <rect>
+         <x>550</x>
+         <y>20</y>
+         <width>91</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>PIN6</string>
+       </property>
+       <widget class="QRadioButton" name="Output_init1_PIN6_radioButton_19">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init0_PIN6_radioButton_19">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=0</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init1_PIN6_radioButton_19">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>90</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Output_init0_PIN6_radioButton_19">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=0</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="PIN3_groupBox_19">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>20</y>
+         <width>91</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>PIN3</string>
+       </property>
+       <widget class="QRadioButton" name="Output_init1_PIN3_radioButton_19">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init0_PIN3_radioButton_19">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=0</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init1_PIN3_radioButton_19">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>90</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Output_init0_PIN3_radioButton_19">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=0</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="PORTD_tab_2">
+     <attribute name="title">
+      <string>PORTD</string>
+     </attribute>
+     <widget class="QGroupBox" name="PORTD_groupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>741</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>PORTD</string>
+      </property>
+      <widget class="QPushButton" name="All_Output_Init0_pushButton_11">
+       <property name="geometry">
+        <rect>
+         <x>120</x>
+         <y>160</y>
+         <width>111</width>
+         <height>18</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>All_O/P with I.V=0</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="All_Output_Init1_pushButton_11">
+       <property name="geometry">
+        <rect>
+         <x>250</x>
+         <y>160</y>
+         <width>111</width>
+         <height>18</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>All_O/P with I.V=1</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="All_Input_Init0_pushButton_11">
+       <property name="geometry">
+        <rect>
+         <x>380</x>
+         <y>160</y>
+         <width>111</width>
+         <height>18</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>All_I/P with I.V=0</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="All_Input_Init1_pushButton_11">
+       <property name="geometry">
+        <rect>
+         <x>510</x>
+         <y>160</y>
+         <width>111</width>
+         <height>18</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>All_I/P with I.V=1</string>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="PIN1_groupBox_11">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>20</y>
+         <width>91</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>PIN1</string>
+       </property>
+       <widget class="QRadioButton" name="Output_init1_PIN1_radioButton_11">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init0_PIN1_radioButton_11">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=0</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init1_PIN1_radioButton_11">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>90</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Output_init0_PIN1_radioButton_11">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=0</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="PIN0_groupBox_10">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>91</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="title">
+        <string>PIN0</string>
+       </property>
+       <widget class="QRadioButton" name="Output_init1_PIN0_radioButton_11">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init0_PIN0_radioButton_11">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=0</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init1_PIN0_radioButton_12">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>90</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Output_init0_PIN0_radioButton_11">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=0</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="PIN4_groupBox_10">
+       <property name="geometry">
+        <rect>
+         <x>370</x>
+         <y>20</y>
+         <width>91</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>PIN4</string>
+       </property>
+       <widget class="QRadioButton" name="Output_init1_PIN4_radioButton_10">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init0_PIN4_radioButton_10">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=0</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init1_PIN4_radioButton_10">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>90</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Output_init0_PIN4_radioButton_10">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=0</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="PIN2_groupBox_10">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>20</y>
+         <width>91</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>PIN2</string>
+       </property>
+       <widget class="QRadioButton" name="Output_init1_PIN2_radioButton_10">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init0_PIN2_radioButton_10">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=0</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init1_PIN2_radioButton_10">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>90</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Output_init0_PIN2_radioButton_10">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=0</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="PIN5_groupBox_10">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>20</y>
+         <width>91</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>PIN5</string>
+       </property>
+       <widget class="QRadioButton" name="Output_init1_PIN5_radioButton_10">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init0_PIN5_radioButton_10">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=0</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init1_PIN5_radioButton_10">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>90</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Output_init0_PIN5_radioButton_10">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=0</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="PIN7_groupBox_10">
+       <property name="geometry">
+        <rect>
+         <x>640</x>
+         <y>20</y>
+         <width>91</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>PIN7</string>
+       </property>
+       <widget class="QRadioButton" name="Output_init1_PIN7_radioButton_10">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init0_PIN7_radioButton_10">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=0</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init1_PIN7_radioButton_10">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>90</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Output_init0_PIN7_radioButton_10">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=0</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="PIN6_groupBox_10">
+       <property name="geometry">
+        <rect>
+         <x>550</x>
+         <y>20</y>
+         <width>91</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>PIN6</string>
+       </property>
+       <widget class="QRadioButton" name="Output_init1_PIN6_radioButton_10">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init0_PIN6_radioButton_10">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=0</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init1_PIN6_radioButton_10">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>90</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Output_init0_PIN6_radioButton_10">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=0</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QGroupBox" name="PIN3_groupBox_10">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>20</y>
+         <width>91</width>
+         <height>131</height>
+        </rect>
+       </property>
+       <property name="title">
+        <string>PIN3</string>
+       </property>
+       <widget class="QRadioButton" name="Output_init1_PIN3_radioButton_10">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init0_PIN3_radioButton_10">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>70</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=0</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Input_init1_PIN3_radioButton_10">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>90</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>I/P-I.V=1</string>
+        </property>
+       </widget>
+       <widget class="QRadioButton" name="Output_init0_PIN3_radioButton_10">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>71</width>
+          <height>18</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>O/P-I.V=0</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>370</y>
+      <width>471</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Enter Output Path here</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>80</y>
+     <width>761</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="visible">
+    <bool>false</bool>
+   </property>
+   <widget class="QWidget" name="dockWidgetContents">
+    <widget class="QGroupBox" name="LoadgroupBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>731</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::RightToLeft</enum>
+     </property>
+     <property name="title">
+      <string>Load</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <widget class="QPushButton" name="LoadpushButton">
+      <property name="geometry">
+       <rect>
+        <x>641</x>
+        <y>20</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Load</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="textEdit_2">
+      <property name="geometry">
+       <rect>
+        <x>9</x>
+        <y>20</y>
+        <width>620</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:8pt;&quot;&gt;Please Enter The Path of The File You Want To Load&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="pushButton_4">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>20</y>
+     <width>71</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="visible">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>BACK</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Skull_label">
+   <property name="geometry">
+    <rect>
+     <x>1</x>
+     <y>-6</y>
+     <width>781</width>
+     <height>501</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::AutoText</enum>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="test.qrc">:/newPrefix/skull.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <zorder>Skull_label</zorder>
+  <zorder>dockWidget</zorder>
+  <zorder>DIOgroupBox</zorder>
+  <zorder>pushButton_4</zorder>
+  <zorder>pushButton_2</zorder>
+  <zorder>pushButton_3</zorder>
+ </widget>
+ <resources>
+  <include location="test.qrc"/>
+  <include location="test.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>pushButton_2</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>350</x>
+     <y>68</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>490</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>pushButton_3</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>490</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>350</x>
+     <y>68</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>DIOgroupBox</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>266</x>
+     <y>41</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>10</x>
+     <y>150</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>LoadgroupBox</sender>
+   <signal>clicked()</signal>
+   <receiver>LoadgroupBox</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>678</x>
+     <y>112</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>616</x>
+     <y>112</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>LoadpushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>DIOgroupBox</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>741</x>
+     <y>132</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>764</x>
+     <y>142</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>LoadgroupBox</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>486</x>
+     <y>39</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>602</x>
+     <y>112</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>dockWidget</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>470</x>
+     <y>18</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>638</x>
+     <y>22</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>LoadpushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>dockWidget</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>692</x>
+     <y>132</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>698</x>
+     <y>19</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>pushButton_4</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>348</x>
+     <y>36</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>665</x>
+     <y>39</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>DIOgroupBox</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>722</x>
+     <y>35</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>744</x>
+     <y>72</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>pushButton_3</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>660</x>
+     <y>24</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>333</x>
+     <y>30</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>pushButton_2</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>663</x>
+     <y>45</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>486</x>
+     <y>44</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>pushButton_4</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>478</x>
+     <y>22</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>694</x>
+     <y>20</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>dockWidget</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>695</x>
+     <y>40</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>390</x>
+     <y>130</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>pushButton_3</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>296</x>
+     <y>34</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>268</x>
+     <y>58</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>pushButton_2</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>478</x>
+     <y>27</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>484</x>
+     <y>60</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init0_pushButton_18</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init0_PIN0_radioButton_18</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>152</x>
+     <y>298</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>82</x>
+     <y>194</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init0_pushButton_18</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init0_PIN1_radioButton_18</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>219</x>
+     <y>298</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>183</x>
+     <y>196</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init0_pushButton_18</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init0_PIN2_radioButton_17</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>230</x>
+     <y>297</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>239</x>
+     <y>192</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init0_pushButton_18</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init0_PIN3_radioButton_17</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>205</x>
+     <y>293</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>332</x>
+     <y>195</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init0_pushButton_18</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init0_PIN4_radioButton_17</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>191</x>
+     <y>297</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>438</x>
+     <y>189</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PORTA_groupBox_2</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init0_PIN5_radioButton_17</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>187</x>
+     <y>285</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>522</x>
+     <y>194</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init0_pushButton_18</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init0_PIN6_radioButton_17</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>247</x>
+     <y>303</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>620</x>
+     <y>195</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init0_pushButton_18</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init0_PIN7_radioButton_17</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>227</x>
+     <y>298</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>698</x>
+     <y>196</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init1_pushButton_18</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init1_PIN0_radioButton_18</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>298</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>101</x>
+     <y>212</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init1_pushButton_18</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init1_PIN1_radioButton_18</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>336</x>
+     <y>298</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>191</x>
+     <y>214</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init1_pushButton_18</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init1_PIN2_radioButton_17</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>349</x>
+     <y>294</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>279</x>
+     <y>211</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init1_pushButton_18</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init1_PIN3_radioButton_17</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>362</x>
+     <y>295</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>353</x>
+     <y>216</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init1_pushButton_18</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init1_PIN4_radioButton_17</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>375</x>
+     <y>297</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>425</x>
+     <y>216</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init1_pushButton_18</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init1_PIN5_radioButton_17</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>363</x>
+     <y>299</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>519</x>
+     <y>217</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init1_pushButton_18</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init1_PIN6_radioButton_17</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>367</x>
+     <y>299</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>587</x>
+     <y>213</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init1_pushButton_18</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init1_PIN7_radioButton_17</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>371</x>
+     <y>300</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>680</x>
+     <y>214</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init0_pushButton_18</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init0_PIN0_radioButton_18</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>435</x>
+     <y>301</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>102</x>
+     <y>228</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init0_pushButton_18</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init0_PIN1_radioButton_18</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>459</x>
+     <y>299</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>149</x>
+     <y>231</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init0_pushButton_18</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init0_PIN2_radioButton_17</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>452</x>
+     <y>297</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>266</x>
+     <y>230</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init0_pushButton_18</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init0_PIN3_radioButton_17</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>482</x>
+     <y>295</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>358</x>
+     <y>234</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init0_pushButton_18</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init0_PIN4_radioButton_17</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>490</x>
+     <y>300</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>413</x>
+     <y>235</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init0_pushButton_18</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init0_PIN5_radioButton_17</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>497</x>
+     <y>299</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>511</x>
+     <y>232</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init0_pushButton_18</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init0_PIN6_radioButton_17</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>491</x>
+     <y>296</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>602</x>
+     <y>231</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init0_pushButton_18</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init0_PIN7_radioButton_17</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>486</x>
+     <y>295</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>683</x>
+     <y>232</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init1_pushButton_18</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init1_PIN7_radioButton_17</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>573</x>
+     <y>303</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>691</x>
+     <y>252</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init1_pushButton_18</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init1_PIN6_radioButton_17</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>601</x>
+     <y>305</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>607</x>
+     <y>256</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init1_pushButton_18</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init1_PIN5_radioButton_17</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>532</x>
+     <y>292</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>532</x>
+     <y>255</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init1_pushButton_18</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init1_PIN4_radioButton_17</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>558</x>
+     <y>299</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>460</x>
+     <y>259</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init1_pushButton_18</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init1_PIN3_radioButton_17</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>597</x>
+     <y>300</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>372</x>
+     <y>255</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init1_pushButton_18</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init1_PIN2_radioButton_17</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>581</x>
+     <y>299</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>277</x>
+     <y>250</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init1_pushButton_18</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init1_PIN1_radioButton_18</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>627</x>
+     <y>300</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>192</x>
+     <y>250</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init1_pushButton_18</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init1_PIN0_radioButton_19</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>632</x>
+     <y>299</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>89</x>
+     <y>256</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init0_pushButton_18</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init0_PIN5_radioButton_17</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>200</x>
+     <y>300</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>499</x>
+     <y>191</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init0_pushButton_19</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init0_PIN0_radioButton_19</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>147</x>
+     <y>296</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>88</x>
+     <y>197</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init0_pushButton_19</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init0_PIN1_radioButton_19</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>201</x>
+     <y>300</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>183</x>
+     <y>193</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init0_pushButton_19</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init0_PIN2_radioButton_18</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>239</x>
+     <y>296</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>251</x>
+     <y>194</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init0_pushButton_19</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init0_PIN3_radioButton_18</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>229</x>
+     <y>298</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>347</x>
+     <y>198</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init0_pushButton_19</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init0_PIN4_radioButton_18</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>203</x>
+     <y>298</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>409</x>
+     <y>191</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init0_pushButton_19</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init0_PIN5_radioButton_18</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>226</x>
+     <y>297</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>533</x>
+     <y>192</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init0_pushButton_19</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init0_PIN6_radioButton_18</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>227</x>
+     <y>302</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>594</x>
+     <y>194</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init0_pushButton_19</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init0_PIN7_radioButton_18</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>225</x>
+     <y>299</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>680</x>
+     <y>194</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init1_pushButton_19</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init1_PIN0_radioButton_19</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>287</x>
+     <y>302</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>101</x>
+     <y>213</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init1_pushButton_19</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init1_PIN1_radioButton_19</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>310</x>
+     <y>300</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>186</x>
+     <y>215</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init1_pushButton_19</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>Output_init1_PIN2_radioButton_18</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>362</x>
+     <y>300</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>275</x>
+     <y>213</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init1_pushButton_19</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init1_PIN3_radioButton_18</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>354</x>
+     <y>301</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>326</x>
+     <y>215</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init1_pushButton_19</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init1_PIN4_radioButton_18</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>371</x>
+     <y>301</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>421</x>
+     <y>212</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init1_pushButton_19</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init1_PIN5_radioButton_18</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>348</x>
+     <y>292</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>502</x>
+     <y>211</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init1_pushButton_19</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init1_PIN6_radioButton_18</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>336</x>
+     <y>300</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>620</x>
+     <y>218</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init1_pushButton_19</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init1_PIN7_radioButton_18</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>348</x>
+     <y>299</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>683</x>
+     <y>214</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init0_pushButton_19</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init0_PIN0_radioButton_19</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>477</x>
+     <y>299</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>85</x>
+     <y>228</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init0_pushButton_19</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init0_PIN1_radioButton_19</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>433</x>
+     <y>297</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>186</x>
+     <y>229</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init0_pushButton_19</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init0_PIN2_radioButton_18</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>460</x>
+     <y>299</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>284</x>
+     <y>231</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init0_pushButton_19</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init0_PIN3_radioButton_18</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>497</x>
+     <y>300</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>369</x>
+     <y>232</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init0_pushButton_19</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init0_PIN4_radioButton_18</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>510</x>
+     <y>292</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>427</x>
+     <y>227</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init0_pushButton_19</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init0_PIN5_radioButton_18</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>480</x>
+     <y>297</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>502</x>
+     <y>233</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>PORTB_groupBox_2</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init0_PIN6_radioButton_18</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>460</x>
+     <y>288</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>631</x>
+     <y>236</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init0_pushButton_19</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init0_PIN7_radioButton_18</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>479</x>
+     <y>295</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>684</x>
+     <y>231</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init1_pushButton_19</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init1_PIN0_radioButton_20</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>553</x>
+     <y>295</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>93</x>
+     <y>255</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init1_pushButton_19</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init1_PIN7_radioButton_18</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>627</x>
+     <y>301</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>693</x>
+     <y>257</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init1_pushButton_19</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init1_PIN6_radioButton_18</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>592</x>
+     <y>302</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>602</x>
+     <y>258</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init1_pushButton_19</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init1_PIN5_radioButton_18</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>555</x>
+     <y>296</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>532</x>
+     <y>252</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init1_pushButton_19</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init1_PIN4_radioButton_18</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>562</x>
+     <y>297</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>445</x>
+     <y>250</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init1_pushButton_19</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init1_PIN3_radioButton_18</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>542</x>
+     <y>303</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>359</x>
+     <y>256</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init1_pushButton_19</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init1_PIN2_radioButton_18</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>594</x>
+     <y>298</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>237</x>
+     <y>250</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init1_pushButton_19</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init1_PIN1_radioButton_19</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>587</x>
+     <y>297</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>187</x>
+     <y>252</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init0_pushButton_19</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init0_PIN6_radioButton_18</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>466</x>
+     <y>298</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>606</x>
+     <y>232</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init0_pushButton_20</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init0_PIN0_radioButton_20</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>153</x>
+     <y>296</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>62</x>
+     <y>195</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init0_pushButton_20</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init0_PIN1_radioButton_20</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>213</x>
+     <y>302</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>146</x>
+     <y>197</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init0_pushButton_20</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init0_PIN2_radioButton_19</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>232</x>
+     <y>293</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>259</x>
+     <y>195</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init0_pushButton_20</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init0_PIN3_radioButton_19</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>234</x>
+     <y>298</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>338</x>
+     <y>193</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init0_pushButton_20</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init0_PIN4_radioButton_19</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>238</x>
+     <y>298</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>430</x>
+     <y>198</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init0_pushButton_20</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init0_PIN5_radioButton_19</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>246</x>
+     <y>296</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>522</x>
+     <y>192</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init0_pushButton_20</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init0_PIN6_radioButton_19</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>190</x>
+     <y>301</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>600</x>
+     <y>188</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init0_pushButton_20</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init0_PIN7_radioButton_19</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>201</x>
+     <y>299</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>675</x>
+     <y>191</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init1_pushButton_20</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init1_PIN0_radioButton_20</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>304</x>
+     <y>299</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>109</x>
+     <y>213</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init1_pushButton_20</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init1_PIN1_radioButton_20</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>315</x>
+     <y>303</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>169</x>
+     <y>210</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init1_pushButton_20</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init1_PIN2_radioButton_19</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>355</x>
+     <y>300</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>280</x>
+     <y>213</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init1_pushButton_20</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init1_PIN3_radioButton_19</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>354</x>
+     <y>292</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>356</x>
+     <y>217</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init1_pushButton_20</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init1_PIN4_radioButton_19</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>348</x>
+     <y>298</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>217</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init1_pushButton_20</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init1_PIN5_radioButton_19</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>372</x>
+     <y>297</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>501</x>
+     <y>217</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init1_pushButton_20</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init1_PIN6_radioButton_19</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>320</x>
+     <y>298</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>588</x>
+     <y>208</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init1_pushButton_20</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init1_PIN7_radioButton_19</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>334</x>
+     <y>301</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>674</x>
+     <y>208</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init0_pushButton_20</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init0_PIN7_radioButton_19</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>457</x>
+     <y>305</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>680</x>
+     <y>238</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init0_pushButton_20</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init0_PIN6_radioButton_19</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>496</x>
+     <y>298</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>636</x>
+     <y>230</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init0_pushButton_20</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init0_PIN5_radioButton_19</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>461</x>
+     <y>302</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>521</x>
+     <y>234</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init0_pushButton_20</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init0_PIN4_radioButton_19</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>441</x>
+     <y>298</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>433</x>
+     <y>238</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init0_pushButton_20</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init0_PIN3_radioButton_19</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>438</x>
+     <y>296</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>365</x>
+     <y>230</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init0_pushButton_20</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init0_PIN2_radioButton_19</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>413</x>
+     <y>297</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>290</x>
+     <y>231</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init0_pushButton_20</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init0_PIN1_radioButton_20</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>452</x>
+     <y>300</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>187</x>
+     <y>230</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init0_pushButton_20</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init0_PIN0_radioButton_20</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>458</x>
+     <y>297</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>95</x>
+     <y>228</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init1_pushButton_20</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init1_PIN7_radioButton_19</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>576</x>
+     <y>301</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>707</x>
+     <y>257</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init1_pushButton_20</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init1_PIN6_radioButton_19</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>582</x>
+     <y>298</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>601</x>
+     <y>250</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init1_pushButton_20</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init1_PIN5_radioButton_19</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>560</x>
+     <y>294</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>542</x>
+     <y>253</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init1_pushButton_20</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init1_PIN4_radioButton_19</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>562</x>
+     <y>296</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>446</x>
+     <y>256</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init1_pushButton_20</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init1_PIN3_radioButton_19</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>564</x>
+     <y>302</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>349</x>
+     <y>251</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init1_pushButton_20</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init1_PIN2_radioButton_19</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>603</x>
+     <y>299</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>276</x>
+     <y>257</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init1_pushButton_20</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init1_PIN1_radioButton_20</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>603</x>
+     <y>303</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>193</x>
+     <y>259</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init1_pushButton_20</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init1_PIN0_radioButton_21</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>598</x>
+     <y>298</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>90</x>
+     <y>252</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init0_pushButton_11</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init0_PIN0_radioButton_11</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>187</x>
+     <y>297</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>76</x>
+     <y>186</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init0_pushButton_11</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init0_PIN1_radioButton_11</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>214</x>
+     <y>300</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>179</x>
+     <y>198</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init0_pushButton_11</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init0_PIN2_radioButton_10</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>235</x>
+     <y>297</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>255</x>
+     <y>195</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init0_pushButton_11</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init0_PIN3_radioButton_10</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>240</x>
+     <y>300</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>348</x>
+     <y>199</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init0_pushButton_11</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init0_PIN4_radioButton_10</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>206</x>
+     <y>296</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>424</x>
+     <y>197</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init0_pushButton_11</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init0_PIN5_radioButton_10</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>196</x>
+     <y>297</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>492</x>
+     <y>190</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init0_pushButton_11</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init0_PIN6_radioButton_10</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>201</x>
+     <y>302</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>591</x>
+     <y>190</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init0_pushButton_11</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init0_PIN7_radioButton_10</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>175</x>
+     <y>299</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>684</x>
+     <y>193</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init1_pushButton_11</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init1_PIN0_radioButton_11</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>301</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>82</x>
+     <y>218</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init1_pushButton_11</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init1_PIN3_radioButton_10</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>359</x>
+     <y>299</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>347</x>
+     <y>217</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init1_pushButton_11</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init1_PIN7_radioButton_10</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>382</x>
+     <y>292</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>707</x>
+     <y>216</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init1_pushButton_11</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init1_PIN6_radioButton_10</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>369</x>
+     <y>300</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>589</x>
+     <y>216</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init1_pushButton_11</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init1_PIN5_radioButton_10</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>358</x>
+     <y>301</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>516</x>
+     <y>207</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init1_pushButton_11</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init1_PIN4_radioButton_10</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>335</x>
+     <y>299</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>409</x>
+     <y>212</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init1_pushButton_11</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init1_PIN2_radioButton_10</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>318</x>
+     <y>294</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>284</x>
+     <y>217</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Output_Init1_pushButton_11</sender>
+   <signal>clicked()</signal>
+   <receiver>Output_init1_PIN1_radioButton_11</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>322</x>
+     <y>297</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>192</x>
+     <y>216</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init0_pushButton_11</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init0_PIN7_radioButton_10</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>448</x>
+     <y>296</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>724</x>
+     <y>236</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init0_pushButton_11</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init0_PIN6_radioButton_10</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>485</x>
+     <y>302</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>601</x>
+     <y>239</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init0_pushButton_11</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init0_PIN5_radioButton_10</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>435</x>
+     <y>297</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>518</x>
+     <y>238</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init0_pushButton_11</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init0_PIN4_radioButton_10</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>438</x>
+     <y>298</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>438</x>
+     <y>237</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init0_pushButton_11</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init0_PIN3_radioButton_10</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>417</x>
+     <y>296</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>375</x>
+     <y>236</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init0_pushButton_11</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init0_PIN2_radioButton_10</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>424</x>
+     <y>300</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>276</x>
+     <y>236</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init0_pushButton_11</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init0_PIN1_radioButton_11</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>445</x>
+     <y>301</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>167</x>
+     <y>227</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init0_pushButton_11</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init0_PIN0_radioButton_11</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>460</x>
+     <y>299</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>111</x>
+     <y>232</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init1_pushButton_11</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init1_PIN7_radioButton_10</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>585</x>
+     <y>302</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>682</x>
+     <y>259</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init1_pushButton_11</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init1_PIN6_radioButton_10</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>576</x>
+     <y>294</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>605</x>
+     <y>258</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init1_pushButton_11</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init1_PIN5_radioButton_10</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>532</x>
+     <y>292</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>532</x>
+     <y>257</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init1_pushButton_11</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init1_PIN4_radioButton_10</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>556</x>
+     <y>295</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>455</x>
+     <y>251</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init1_pushButton_11</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init1_PIN3_radioButton_10</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>544</x>
+     <y>299</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>376</x>
+     <y>252</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init1_pushButton_11</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init1_PIN2_radioButton_10</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>581</x>
+     <y>298</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>249</x>
+     <y>250</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init1_pushButton_11</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init1_PIN1_radioButton_11</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>568</x>
+     <y>296</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>191</x>
+     <y>252</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>All_Input_Init1_pushButton_11</sender>
+   <signal>clicked()</signal>
+   <receiver>Input_init1_PIN0_radioButton_12</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>590</x>
+     <y>301</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>81</x>
+     <y>253</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
