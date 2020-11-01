@@ -17,7 +17,7 @@
 	- I/P with I.V = 1   ==> Intput with initial value = 1
 	- Note: Check the screen shot attached 
 		and take it as a reference or a basic visualisation.
-		file name: "Basic_PinConfig.PNG"
+		- file name: "Basic_PinConfig.PNG"
  - The tool shall have 3 buttons for configuration:
 	- New -> create a file with any extension to save the current
 	configurations.
@@ -32,4 +32,4 @@
   - You can run the DIO configurator directly from "AVR_PortConfig.py"
   - You can easily change the GUI from "AVR_PortConfig.ui" 
     but then you will have to generate the "AVR_PortConfig.py" file again
-    using the following command: pyside2-uic file_name.ui -o file_name.py
+    - Use the following command: pyside2-uic file_name.ui -o file_name.py
